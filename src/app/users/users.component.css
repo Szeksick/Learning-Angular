@@ -7,24 +7,33 @@ ul{
 li{
   margin: 1rem 0;
   display: flex;
+  padding: 1rem;
   flex-direction: row;
-  flex: 0 50%;
+  flex: 0 40%;
   min-width: 300px;
+  background: lightgray;
+  border-radius: 5px;
 }
 .data-wrapper{
   display:flex;
   flex-direction: column;
   flex:2;
+  align-self: flex-end;
+  justify-content: center;
 }
 li img{
+  display:block;
   border-radius:50%;
   flex:1;
+  margin-right: 2rem;
 }
 .data-wrapper p{
-  margin-left: 1rem;
   font-size: 2rem;
+  flex: 2;
 }
 .data-wrapper a{
-  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+  flex:1;
 }
 
