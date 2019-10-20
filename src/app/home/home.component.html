@@ -1,5 +1,12 @@
-<h1>Home clicking</h1>
+<h1 [style.color]="h2Style ? 'blue' : 'black'">Home clicking</h1>
 <button (click)="buttonHome()">Kliknij mnie</button>
 
 <h2 [class.gray]="h2Style">Zmień mi kolor klikając w button</h2>
-<button (click)="colorChange()">Zmien kolor</button>
+
+<button (click)="colorChange()">Kliknij!</button>
+
+<h2 [ngClass]="{
+'small': h2Style,
+'large' : !h2Style
+}">Nagłówek zmieniający rozmiar</h2>
+

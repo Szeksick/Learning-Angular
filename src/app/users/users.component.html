@@ -1,0 +1,11 @@
+<p>users works!</p>
+
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar">
+    <div class="data-wrapper">
+    <p>{{user.first_name}} {{user.last_name}}</p>
+    <a href="emailto:{{user.email}}">{{user.email}}</a>
+  </div>
+  </li>
+</ul>
